@@ -1,4 +1,4 @@
-import CoffeeMenu from "./components/CoffeeMenu";
+import CoffeeMenu from "./components/CafeMenu";
 // const cafeMenu = [
 //   {
 //     name: "Black Coffee",
