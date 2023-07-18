@@ -1,13 +1,14 @@
 import CafeMenu from "./components/CafeMenu";
+import Header from "./ui/Header";
+import Footer from "./ui/Footer";
 
 function App() {
   return (
-    <>
-      <div>
-        <h1>Black House Coffee</h1>
-        <CafeMenu />
-      </div>
-    </>
+    <div className="bg-black mx-auto p-10">
+      <Header />
+      <CafeMenu />
+      <Footer />
+    </div>
   );
 }
 
