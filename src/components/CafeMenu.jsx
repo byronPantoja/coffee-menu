@@ -1,5 +1,11 @@
+import MenuCard from "./MenuCard";
+
 function CafeMenu() {
-  return <>Menu</>;
+  return (
+    <>
+      <MenuCard />
+    </>
+  );
 }
 
 export default CafeMenu;
