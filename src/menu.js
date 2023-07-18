@@ -1,4 +1,4 @@
-const cafeMenu = [
+const menuItems = [
   {
     name: "Black Coffee",
     ingredients: "Arabica House Blend",
