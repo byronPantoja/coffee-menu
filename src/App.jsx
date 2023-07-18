@@ -1,3 +1,4 @@
+import CoffeeMenu from "./components/CoffeeMenu";
 // const cafeMenu = [
 //   {
 //     name: "Black Coffee",
@@ -42,10 +43,6 @@
 //     soldOut: false,
 //   },
 // ];
-
-function CoffeeMenu() {
-  return <h2>Coffee</h2>;
-}
 
 function App() {
   return (
