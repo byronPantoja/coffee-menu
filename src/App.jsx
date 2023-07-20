@@ -1,4 +1,4 @@
-import CafeMenu from "./components/CafeMenu";
+import CafeMenu from "./features/menu/CafeMenu";
 import Header from "./ui/Header";
 import Footer from "./ui/Footer";
 
@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="bg-black mx-auto p-10">
       <Header />
-      <CafeMenu />
+      <main>
+        <CafeMenu />
+      </main>
       <Footer />
     </div>
   );
