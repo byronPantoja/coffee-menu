@@ -45,24 +45,33 @@ const menuItems = [
 
 function MenuItems() {
   return (
-    <ul
-      role="list"
-      className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-6"
-    >
-      {menuItems.map((item) => (
-        <li
-          key={item.name}
-          className="col-span-1 flex flex-col text-center text-white"
-        >
-          <div className="flex justify-between px-2 py-2 text-xl">
-            <h2>{item.name}</h2>
-            <h2>${item.price}</h2>
-          </div>
-          <img src={item.photoName} className="rounded-lg" />
-          <p className="text-sm">{item.ingredients}</p>
-        </li>
-      ))}
-    </ul>
+    <>
+      <ul
+        role="list"
+        className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-6"
+      >
+        {menuItems.map((item) => (
+          <li
+            key={item.name}
+            className="col-span-1 flex flex-col text-center text-white"
+          >
+            <div className="flex justify-between px-2 py-2 text-xl">
+              <h2>{item.name}</h2>
+              <h2>
+                {!item.soldOut ? `$${item.price}` : `Sorry, we're sold out.`}
+              </h2>
+            </div>
+            <img src={item.photoName} className="rounded-lg" />
+
+            <p className="text-sm">
+              {!item.soldOut
+                ? item.ingredients
+                : `Restocking, come back later!`}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
 
