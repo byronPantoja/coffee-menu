@@ -1,4 +1,4 @@
-import CafeMenu from "./components/CafeMenu";
+import CafeMenu from "./features/menu/CafeMenu";
 import Header from "./ui/Header";
 import Footer from "./ui/Footer";
 

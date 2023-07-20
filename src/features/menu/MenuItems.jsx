@@ -52,7 +52,7 @@ function MenuItems() {
       >
         {menuItems.map((item) => (
           <li
-            key={item.name}
+            key={name}
             className="col-span-1 flex flex-col text-center text-white"
           >
             <div className="flex justify-between px-2 py-2 text-xl">
