@@ -1,9 +1,9 @@
-import MenuCard from "./MenuCard";
+import MenuItems from "./MenuItems";
 
 function CafeMenu() {
   return (
     <>
-      <MenuCard />
+      <MenuItems />
     </>
   );
 }

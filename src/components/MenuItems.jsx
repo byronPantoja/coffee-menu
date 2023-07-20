@@ -43,7 +43,7 @@ const menuItems = [
   },
 ];
 
-function MenuCard() {
+function MenuItems() {
   return (
     <ul
       role="list"
@@ -66,4 +66,4 @@ function MenuCard() {
   );
 }
 
-export default MenuCard;
+export default MenuItems;

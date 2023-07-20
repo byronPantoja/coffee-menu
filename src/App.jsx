@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="bg-black mx-auto p-10">
       <Header />
-      <CafeMenu />
+      <main>
+        <CafeMenu />
+      </main>
       <Footer />
     </div>
   );
