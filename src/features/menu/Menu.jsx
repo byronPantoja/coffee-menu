@@ -1,6 +1,6 @@
 import MenuItems from "./MenuItems";
 
-function CafeMenu() {
+function Menu() {
   return (
     <>
       <MenuItems />
@@ -8,4 +8,4 @@ function CafeMenu() {
   );
 }
 
-export default CafeMenu;
+export default Menu;
